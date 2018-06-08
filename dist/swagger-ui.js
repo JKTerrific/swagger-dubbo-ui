@@ -3119,18 +3119,25 @@ Handlebars.registerHelper('renderTextParam', function(param) {
     } else {
       defaultValue = '';
     }
+    if(param.signature === 'undefined'){
+        param.signature = param.type;
+    }
 
     if(isArray) {
         result = '<textarea class=\'body-textarea' + (param.required ? ' required' : '') + '\' name=\'' + name + '\'' + idAtt + dataVendorExtensions;
         result += ' placeholder=\'Provide multiple values in new lines' + (param.required ? ' (at least one required).' : '.') + '\'>';
         result += defaultValue + '</textarea>';
-    } else {
+    } else if(param.schema) {
         var parameterClass = 'parameter';
         if(param.required) {
           parameterClass += ' required';
         }
         result = '<textarea class=\'body-textarea' + (param.required ? ' required' : '') + '\' name=\'' + name + '\'' + idAtt + dataVendorExtensions+ '\'>';
         result += defaultValue + '</textarea>';
+    }else{
+        result = '<input class=\'' + parameterClass + '\' minlength=\'' + (param.required ? 1 : 0) + '\'';
+        result += ' name=\'' + name +'\' placeholder=\'' + (param.required ? '(required)' : '') + '\'' + idAtt + dataVendorExtensions;
+        result += ' type=\'' + type + '\' value=\'' + defaultValue + '\'/>';
     }
     return new Handlebars.SafeString(result);
 });
