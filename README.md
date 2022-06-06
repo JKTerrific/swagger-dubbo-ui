@@ -1,5 +1,6 @@
 # swagger-dubbo-ui
 
+支持 Dubbo2x版本的api接口文档
 对swagger-dubbo组件的定制化swagger-ui界面。
 
 解决了原始swagger-ui的一些问题：
@@ -14,16 +15,16 @@ swagger-dubbo 文档工程移步 https://github.com/Sayi/swagger-dubbo
 
 部分界面如下
 >接口截图
-![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/pic1.jpg)
+![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/picP1.jpg)
 
 
 >返回对象截图
-![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/pic2.png)
+![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/picP2.png)
 
 
 >入参截图
-![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/pic3.png)
+![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/picP3.png)
 
 
 >入参案例截图<br>
-![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/pic4.png)
+![Alt text](https://github.com/JKTerrific/swagger-dubbo-ui/blob/master/screenpic/picP4.png)
